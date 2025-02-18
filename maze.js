@@ -251,13 +251,13 @@ window.onload = function() {
 								};
 								ratImg.src = './rat.png'; 
 							};
-							openImg.src = './gl.png'; 
+							openImg.src = './akadeemia.png'; 
 						};
 						finImg.src = './fin.png'; 
 					};
 					startImg.src = './taltech.png'; 
 				};
-				picImg.src = './pic.bmp'; 
+				picImg.src = './aibuddy.png'; 
 			};
 			ceilingImg.src = './ceiling2.bmp';
 		};
