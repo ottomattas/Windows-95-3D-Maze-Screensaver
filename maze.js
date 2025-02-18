@@ -255,7 +255,7 @@ window.onload = function() {
 						};
 						finImg.src = './fin.png'; 
 					};
-					startImg.src = './start2.png'; 
+					startImg.src = './taltech.png'; 
 				};
 				picImg.src = './pic.bmp'; 
 			};
