@@ -70,7 +70,7 @@ void main()
     else if(i==3) gl_FragColor = fDrainMatrix*texture2D(pic, fTexCoord);
     else if(i==4) gl_FragColor = vec4(texture2D(start, fTexCoord).rgb, texture2D(start, fTexCoord).a);
     else if(i==5) gl_FragColor = vec4(texture2D(fin, fTexCoord).rgb,texture2D(fin, fTexCoord).a*.5);
-    else if(i==6) gl_FragColor = vec4(texture2D(open, fTexCoord).rgb,texture2D(open, fTexCoord).a*.5);
+    else if(i==6) gl_FragColor = vec4(texture2D(open, fTexCoord).rgb,texture2D(open, fTexCoord).a);
     else if(i==7) gl_FragColor = texture2D(rat, fTexCoord);
     else if(i==8) gl_FragColor = fColor;
 	else gl_FragColor = fDrainMatrix*texture2D(wall, fTexCoord);
