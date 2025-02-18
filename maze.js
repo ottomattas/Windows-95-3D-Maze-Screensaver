@@ -598,21 +598,21 @@ function nextMove(theta,X,Y,dtheta,dX,dY)
 		//left=open - rotate left
 		//else i.e. dead end - rotate right
 		if (dtheta && walls[direction]==1) {
-			dX = ((direction==1)-(direction==3))/150;
-			dY = ((direction==2)-(direction==0))/150;
+			dX = ((direction==1)-(direction==3))/100;
+			dY = ((direction==2)-(direction==0))/100;
 			return [theta,X+dX,Y+dY,0,dX,dY];
 		} else if (walls[(direction+3)%4]==1) {
-			dtheta=-0.75 * Math.PI/180.0;
+			dtheta=-1 * Math.PI/180.0;
 			return [theta+dtheta,X,Y,dtheta,0,0];
 		} else if (walls[direction]==1){
-			dX = ((direction==1)-(direction==3))/150;
-			dY = ((direction==2)-(direction==0))/150;
+			dX = ((direction==1)-(direction==3))/100;
+			dY = ((direction==2)-(direction==0))/100;
 			return [theta,X+dX,Y+dY,0,dX,dY];
 		} else if (walls[(direction+1)%4]==1){
-			dtheta=0.75 * Math.PI/180.0;
+			dtheta=1 * Math.PI/180.0;
 			return [theta+dtheta,X,Y,dtheta,0,0];
 		} else {
-			dtheta=-0.75 * Math.PI/180.0;
+			dtheta=-1 * Math.PI/180.0;
 			return [theta+dtheta,X,Y,dtheta,0,0];
 		}		
 	}
