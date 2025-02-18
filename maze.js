@@ -249,7 +249,7 @@ window.onload = function() {
 
 									render(); 
 								};
-								ratImg.src = './rat.png'; 
+								ratImg.src = './astonaut.png'; 
 							};
 							openImg.src = './akadeemia.png'; 
 						};
